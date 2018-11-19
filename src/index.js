@@ -1,10 +1,10 @@
-import uniqueRandomArray from 'unique-random-array';
-import starWarsNames from './nollywoodnames.json';
+var uniqueRandomArray = require('unique-random-array');
+var nollywoodnames = require('./nollywoodnames.json');
 
-const getRandomItem = uniqueRandomArray(starWarsNames);
+const getRandomItem = uniqueRandomArray(nollywoodnames);
 
 module.exports = {
-    all: starWarsNames,
+    all: nollywoodnames,
     random: random
 };
 
