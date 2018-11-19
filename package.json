@@ -25,6 +25,10 @@
     "babel-core": "^7.0.0-bridge.0",
     "unique-random-array": "1.0.0"
   },
+  "engines": {
+    "node": "8.x",
+    "npm": "6.x"
+  },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.1.6",
