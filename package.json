@@ -13,5 +13,8 @@
     "actress"
   ],
   "author": "Awonusi Olajide",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "unique-random-array": "^1.0.1"
+  }
 }
