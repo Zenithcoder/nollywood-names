@@ -7,12 +7,7 @@
     "test": "jest src/index.test.js --coverage",
     "validate": "npm run test",
     "prebuild": "rimraf dist",
-    "prefinal": "rimraf dist",
-    "final": "babel --copy-files --out-dir dist --ignore *.test.js src",
-    "build": "npm-run-all --parallel build:*",
-    "build:main": "babel --copy-files --out-dir dist --ignore *.test.js src",
-    "build:umd": "webpack --output-filename index.umd.js",
-    "build:umd.min": "webpack --output-filename index.umd.min.js -p"
+    "build": "babel --copy-files --out-dir dist --ignore *.test.js src"
   },
   "keywords": [
     "movies",
@@ -27,17 +22,19 @@
   "author": "Awonusi Olajide",
   "license": "MIT",
   "dependencies": {
-    "babel-core": "7.0.0-bridge.0",
+    "babel-core": "^7.0.0-bridge.0",
     "unique-random-array": "1.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",
     "ghooks": "^2.0.4",
     "jest": "^23.6.0",
     "npm-run-all": "^4.1.3",
+    "regenerator-runtime": "^0.13.1",
     "rimraf": "^2.6.2",
     "webpack": "^4.26.0",
     "webpack-cli": "^3.1.2"
